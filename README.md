@@ -1,4 +1,4 @@
-#Telegram Bot
+# Telegram Bot
 
 ## Description
 This bot sends a news about the programming of the medium website to the chat of the user who requests it.
@@ -13,7 +13,7 @@ This bot sends a news about the programming of the medium website to the chat of
 
 ## Usage
 
-###Before you can use it, you need to have the following.
+### Before you can use it, you need to have the following.
 * A bot previously created in the telegram application, this process generates a token.
 * The dependencies that are shared on the resources must be installed.
 
