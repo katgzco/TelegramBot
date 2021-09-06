@@ -1,7 +1,7 @@
 # Telegram Bot
 
 ## Description
-This bot sends a news related to programming hosted on the Medium website to the chat of the requesting user.
+This bot sends news related to programming hosted on the Medium website to the chat of the requesting user.
 
 
 ## Resources
