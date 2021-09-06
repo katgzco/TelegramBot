@@ -21,7 +21,8 @@ This bot sends a news about the programming of the medium website to the chat of
 
 ### use in the bot chat
 
-once everything is working, the bot has defined 2 commands
+once everything is working, the bot has defined 2 commands:
+
 
 > /start
 
