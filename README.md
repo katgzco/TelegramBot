@@ -4,11 +4,11 @@
 This bot sends a news about the programming of the medium website to the chat of the user who requests it.
 
 
-##Resources
-https://core.telegram.org/bots
-https://github.com/python-telegram-bot/python-telegram-bot/wiki/Extensions-%E2%80%93-Your-first-Bot
-https://pypi.org/project/requests/
-https://beautiful-soup-4.readthedocs.io/en/latest/
+## Resources
+* https://core.telegram.org/bots
+* https://github.com/python-telegram-bot/python-telegram-bot/wiki/Extensions-%E2%80%93-Your-first-Bot
+* https://pypi.org/project/requests/
+* https://beautiful-soup-4.readthedocs.io/en/latest/
 
 
 ## Usage
