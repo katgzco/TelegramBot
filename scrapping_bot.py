@@ -41,12 +41,20 @@ updater.start_polling()
 def scrapping_medium():
     URL = 'https://medium.com/tag/programming'
     page = requests.get(URL)
-    soup = BeautifulSoup(page.content, 'html.parser')
+    if (page.status_code == 200):
+        try:
+            soup = BeautifulSoup(page.content, 'html.parser')
 
-    div_elements = soup.find(
-        'div', {"class": "hk l"})
+            div_elements = soup.find(
+                'div', {"class": "hk l"})
 
-    for elements in div_elements:
-        link = elements['href']
+            for elements in div_elements:
+                link = elements['href']
 
-    return link
+            return link
+
+        except BaseException:
+            return """Sorry, I am unable to deliver
+                    the resource to you at this time."""
+
+    return "At this moment medium is not available"
