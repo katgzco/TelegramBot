@@ -19,3 +19,12 @@ This bot sends a news about the programming of the medium website to the chat of
 
     > token=YourToken python3 scrapping_bot.py
 
+### use in the bot chat
+
+once everything is working, the bot has defined 2 commands
+
+> /start
+It generates a welcome message
+
+> /getnew
+Brings the news to the chat
