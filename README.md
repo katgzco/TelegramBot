@@ -25,7 +25,8 @@ once everything is working, the bot has defined 2 commands
 
 > /start
 
-#####It generates a welcome message
+It generates a welcome message
 
 > /getnew
-#####Brings the news to the chat
+
+Brings the news to the chat
