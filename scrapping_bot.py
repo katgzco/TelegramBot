@@ -40,8 +40,6 @@ def medium_new(update, context):
         update: Contains the information of the current request
         context: CallbackContext
     """
-    print(update)
-    print(type(update))
     link = scrapping_medium()
     context.bot.send_message(
         chat_id=update.effective_chat.id, text=link)
@@ -64,7 +62,7 @@ def scrapping_medium():
             soup = BeautifulSoup(page.content, 'html.parser')
 
             div_elements = soup.find(
-                'div', {"class": "hk l"})
+                'div', {'class': 'hk l'})
 
             for elements in div_elements:
                 link = elements['href']
@@ -72,7 +70,7 @@ def scrapping_medium():
             return link
 
         except BaseException:
-            return """Sorry, I am unable to deliver
-                    the resource to you at this time."""
+            return '''Sorry, I am unable to deliver
+                    the resource to you at this time.'''
 
-    return "At this moment medium is not available"
+    return 'At this moment medium is not available'
