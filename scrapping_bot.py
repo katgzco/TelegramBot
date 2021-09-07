@@ -18,6 +18,12 @@ logging.basicConfig(
 
 
 def start(update, context):
+    """sends a welcome message when calling the /start command
+
+    Args:
+        update: Contains the information of the current request
+        context: CallbackContext
+    """
     context.bot.send_message(
         chat_id=update.effective_chat.id, text="Hi human")
 
@@ -27,6 +33,15 @@ dispatcher.add_handler(start_handler)
 
 
 def medium_new(update, context):
+    """Processes the update to send a url as a message when the
+    getnew command is called
+
+    Args:
+        update: Contains the information of the current request
+        context: CallbackContext
+    """
+    print(update)
+    print(type(update))
     link = scrapping_medium()
     context.bot.send_message(
         chat_id=update.effective_chat.id, text=link)
@@ -39,6 +54,9 @@ updater.start_polling()
 
 
 def scrapping_medium():
+    """Performs webscraping to the medium site to bring the
+    latest news concerning the programming tag"""
+
     URL = 'https://medium.com/tag/programming'
     page = requests.get(URL)
     if (page.status_code == 200):
