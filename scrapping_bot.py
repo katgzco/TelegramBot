@@ -53,7 +53,11 @@ updater.start_polling()
 
 def scrapping_medium():
     """Performs webscraping to the medium site to bring the
-    latest news concerning the programming tag"""
+    latest news concerning the programming tag
+    
+    Return: the message sent by the bot to the chat with the
+    command getnew
+    """
 
     URL = 'https://medium.com/tag/programming'
     page = requests.get(URL)
