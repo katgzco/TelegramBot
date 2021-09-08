@@ -56,7 +56,7 @@ def scrapping_medium():
     latest news concerning the programming tag
     
     Return: The message sent by the bot to the chat with the
-    command getnew
+    command /getnew
     """
 
     URL = 'https://medium.com/tag/programming'
@@ -75,6 +75,6 @@ def scrapping_medium():
 
         except BaseException:
             return '''Sorry, I am unable to deliver
-                    the resource to you at this time.'''
+                    the resource to you at this time'''
 
     return 'At this moment medium is not available'
