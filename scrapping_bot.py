@@ -18,7 +18,7 @@ logging.basicConfig(
 
 
 def start(update, context):
-    """sends a welcome message when calling the /start command
+    """Sends a welcome message when calling the /start command
 
     Args:
         update: Contains the information of the current request
@@ -55,7 +55,7 @@ def scrapping_medium():
     """Performs webscraping to the medium site to bring the
     latest news concerning the programming tag
     
-    Return: the message sent by the bot to the chat with the
+    Return: The message sent by the bot to the chat with the
     command getnew
     """
 
